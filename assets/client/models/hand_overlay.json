@@ -1,0 +1,23 @@
+{
+  "render_type": "minecraft:translucent",
+  "ambientocclusion": false,
+  "textures": {
+    "noise": "client:block/hand_noise",
+    "particle": "client:block/hand_noise"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [4, 12, 4],
+      "shade": false,
+      "faces": {
+        "north": {"uv": [0, 0, 5.333, 16], "texture": "#noise", "tintindex": 0},
+        "south": {"uv": [5.333, 0, 10.667, 16], "texture": "#noise", "tintindex": 0},
+        "east": {"uv": [10.667, 0, 16, 16], "texture": "#noise", "tintindex": 0},
+        "west": {"uv": [2.667, 0, 8, 16], "texture": "#noise", "tintindex": 0},
+        "up": {"uv": [0, 0, 5.333, 5.333], "texture": "#noise", "tintindex": 0},
+        "down": {"uv": [8, 8, 13.333, 13.333], "texture": "#noise", "tintindex": 0}
+      }
+    }
+  ]
+}
