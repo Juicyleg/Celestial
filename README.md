@@ -122,27 +122,3 @@ python3 tools/glow_tex.py
 ```
 
 `modern_icons.py` needs `rsvg-convert`; `glow_tex.py` needs `numpy` and `Pillow`.
-
-## Project layout
-
-```
-src/
-  lib.rs         hook wiring and shared state
-  gui.rs         ClickGUI
-  hud.rs         HUD elements
-  paint.rs       vector painter, glow sprites and geometry cache
-  registry.rs    modules, settings and events
-  config.rs      config files and autosave
-  inventory.rs   shared inventory swap queue
-  modules.rs     Sprint, Auto Respawn, Third Person, clock
-  player.rs      Auto Tool, Auto Eat, Elytra Helper
-  visuals.rs     View Model, Swing Animation, Hands Shader, Ambience, Removals, theme
-  cosmetics.rs   China Hat
-  shulker.rs     Shulker Preview
-  zoom.rs        Zoom
-  metrics.rs     font metrics
-assets/client/   textures, fonts, models and language files
-tools/           texture generators
-screenshots/     README images
-```
-
