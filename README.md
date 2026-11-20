@@ -4,6 +4,8 @@ A native Rust client mod for the [Horizon](https://github.com/horizon-rust/horiz
 
 The whole menu and HUD are drawn by the mod itself through Horizon's GUI drawing API, with animated theme gradients, soft glows and smooth open and close transitions.
 
+![ClickGUI](screenshots/1-render-tab.png)
+
 ## Compatibility
 
 | | |
@@ -26,6 +28,8 @@ Native mods are compiled by the Horizon launcher against the exact game build, s
 - Search bar that filters modules across every category.
 - Reopens on the tab you last used.
 
+![Module settings panel](screenshots/2-module-settings.png)
+
 ### HUD
 
 Every element can be dragged while the chat is open, and the whole HUD has a size slider.
@@ -36,6 +40,10 @@ Every element can be dragged while the chat is open, and the whole HUD has a siz
 - **Potions** with level and remaining time.
 - **Keybinds** of bound, enabled modules.
 - **Armor** strip next to the hotbar.
+
+![HUD with the info bar at the top](screenshots/5-hud-top.png)
+
+![HUD with the info panel on the side](screenshots/6-hud-side.png)
 
 ### Modules
 
@@ -65,6 +73,10 @@ Every element can be dragged while the chat is open, and the whole HUD has a siz
 - Each config has a Name field (renames the file), Load, Save and Remove.
 - Configs are plain JSON files in `config/client/configs/`.
 - The current state is also saved automatically to `config/client/auto.json` and restored when you join a world.
+
+![Configs tab](screenshots/3-configs.png)
+
+![Themes tab](screenshots/4-themes.png)
 
 ### Shared inventory handling
 
@@ -131,8 +143,6 @@ src/
   metrics.rs     font metrics
 assets/client/   textures, fonts, models and language files
 tools/           texture generators
+screenshots/     README images
 ```
 
-## Credits
-
-The menu and HUD design follow the Celestial client. Several module behaviours follow the Delta client. This project is a reimplementation for Horizon in Rust.
